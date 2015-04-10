@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/video_poker_background">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:layout_marginLeft="10dp"
+            android:background="#FFFF00"
+            android:id="@+id/menu_button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max Bet"
+            android:layout_marginLeft="10dp"
+            android:background="#FFFF00"
+            android:id="@+id/max_bet" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bet"
+            android:background="#FFFF00"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/bet" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deal"
+            android:layout_marginLeft="10dp"
+            android:background="#FFFF00"
+            android:id="@+id/deal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credits: "
+            android:layout_marginLeft="10dp"
+            android:background="#FFFF00"
+            android:id="@+id/credit" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="510dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
+
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:id="@+id/card_one"
+            android:layout_weight="0.20"
+            />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:id="@+id/card_two"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.20"
+           />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:id="@+id/card_three"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.20"
+            />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:id="@+id/card_four"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.20"
+            />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:id="@+id/card_five"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.20"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="510dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="5dp"
+
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout3">
+
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:text="Held"
+            android:id="@+id/held_one"
+            android:layout_weight=".15"
+            android:background="#000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            android:textColor="#FF0000"/>
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:text="Held"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/held_two"
+            android:background="#000"
+            android:textColor="#FF0000"
+            android:visibility="invisible"
+            android:layout_weight=".15" />
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:text="Held"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/held_three"
+            android:background="#000"
+            android:textColor="#FF0000"
+            android:visibility="invisible"
+            android:layout_weight=".15" />
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:text="Held"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/held_four"
+            android:background="#000"
+            android:visibility="invisible"
+            android:textColor="#FF0000"
+            android:layout_weight=".15" />
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:text="Held"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/held_five"
+            android:background="#000"
+            android:visibility="invisible"
+            android:textColor="#FF0000"
+            android:layout_weight=".15" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_above="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_margin="5dp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:id="@+id/poker_hand" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_margin="4dp"
+        android:layout_alignStart="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:textColor="#FF0000"
+            android:layout_gravity="center"
+            android:text="please make a bet"
+            android:id="@+id/enter_bet" />
+
+        </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/video_poker_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="play video poker"
+            android:id="@+id/play_video_poker"
+            android:layout_margin="5dp"
+            android:background="#006400"
+            android:textSize="20sp"
+            android:textColor="#FFFF00"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="About"
+            android:id="@+id/About"
+            android:textSize="20sp"
+            android:background="#006400"
+            android:textColor="#FFFF00"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
