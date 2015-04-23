@@ -18,6 +18,7 @@ public class Card_Class {
     "one","two","three","four","five","six","seven","eight","nine",
     "ten","eleven","twelve","thirtteen"
     };
+
     public final String card_type[] = {
        "hearts","diamonds","clubs","spades"
     };

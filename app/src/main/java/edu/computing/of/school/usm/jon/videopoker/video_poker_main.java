@@ -41,14 +41,12 @@ public class video_poker_main extends FragmentActivity {
            video_poker.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View v) {
-                    getFragmentManager().beginTransaction().replace(R.id.container,new Game_Fragment()).addToBackStack("video_poker").commit();
+                  getFragmentManager().beginTransaction().replace(R.id.container,new Game_Fragment()).addToBackStack("video_poker").commit();
                }
            });
 
            return view;
        }
    }
-
-
 
 }
